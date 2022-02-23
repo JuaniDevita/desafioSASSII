@@ -1,0 +1,19 @@
+/* mixin */ 
+
+/* @mixin botones {
+    width: 300px;
+    background-color: red;
+    border: 3px solid black;
+}
+
+.boton{
+    @include botones;
+} */
+
+@mixin animaciones($transformaciones){
+    transform: $transformaciones;
+}
+
+section{
+    @include animaciones(scale(95%))
+}
